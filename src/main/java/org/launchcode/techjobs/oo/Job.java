@@ -76,11 +76,11 @@ public class Job {
         this.location = location;
     }
 
-    public void setName(PositionType positionType) {
+    public void setPositionType(PositionType positionType) {
         this.positionType = positionType;
     }
 
-    public void setName(CoreCompetency coreCompetency){
+    public void setCoreCompetency(CoreCompetency coreCompetency){
         this.coreCompetency = coreCompetency;
     }
 }
