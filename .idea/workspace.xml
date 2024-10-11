@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Getters and Setters hashCode from Employer changed to match Job class">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.TestTaskTwo.executor": "Run",
     "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -67,7 +71,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TestTaskTwo">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
+      <module name="techjobs-oo-java17-graded.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.launchcode.techjobs.oo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTaskTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.TestTaskTwo" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       </list>
@@ -139,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685977091317</updated>
-      <workItem from="1728607795487" duration="2757000" />
+      <workItem from="1728607795487" duration="3656000" />
     </task>
     <task id="LOCAL-00001" summary="Initial starting point and working on Job Class">
       <option name="closed" value="true" />
@@ -157,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728610388706</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length">
+      <option name="closed" value="true" />
+      <created>1728610821396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728610821396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial starting point and working on Job Class" />
     <MESSAGE value="Getters and Setters hashCode from Employer changed to match Job class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getters and Setters hashCode from Employer changed to match Job class" />
+    <MESSAGE value="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length" />
+    <option name="LAST_COMMIT_MESSAGE" value="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length" />
   </component>
 </project>

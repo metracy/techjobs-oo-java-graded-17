@@ -47,28 +47,39 @@ public class Job {
     //  and id.
 
     //Getters
+
     public int getId() {
         return id;
     }
+
     public String getName() {return name;}
+
     public Employer getEmployer() {return employer;}
+
     public Location getLocation() {return location;}
+
     public PositionType getPositionType() {return positionType;}
+
     public CoreCompetency getCoreCompetency() {return coreCompetency;}
 
     // Setters
+
     public void setName(String value) {
         this.name = name;
     }
+
     public void setEmployer(Employer employer) {
         this.employer = employer;
     }
+
     public void setLocation(Location location) {
         this.location = location;
     }
+
     public void setName(PositionType positionType) {
         this.positionType = positionType;
     }
+
     public void setName(CoreCompetency coreCompetency){
         this.coreCompetency = coreCompetency;
     }
