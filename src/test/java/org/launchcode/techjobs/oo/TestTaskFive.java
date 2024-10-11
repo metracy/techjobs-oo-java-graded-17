@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 /**
- * Created by LaunchCode
+ * Created by LaunchCode     If line separator error
  */
 public class TestTaskFive extends AbstractTest {
 
