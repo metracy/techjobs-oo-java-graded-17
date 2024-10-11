@@ -91,8 +91,8 @@ public class Job {
         }
 
         return (
-        System.lineSeparator();
-        System.out.println("ID: " + getId() + ", Name: " + getName());
+
+        "ID: " + getId() + System.lineSeparator() + ", Name: " + System.lineSeparator() + getName() + System.lineSeparator() + + System.lineSeparator() + System.lineSeparator() + System.lineSeparator() + System.lineSeparator());
         System.lineSeparator();
         )
     }
