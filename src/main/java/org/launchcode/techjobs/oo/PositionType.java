@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.oo;
 
 import javax.swing.text.Position;
+import java.util.Objects;
 
 public class PositionType {
 
@@ -32,6 +33,11 @@ public class PositionType {
         if (this == o) return true;
         if (!(o instanceof PositionType positionType)) return false;
         return getId() == positionType.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     // Getters and Setters:

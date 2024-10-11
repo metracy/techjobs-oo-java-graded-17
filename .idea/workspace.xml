@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
-    </list>
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="CoreCompetency does not have a getId method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +50,7 @@
   "keyToString": {
     "Gradle.TestTaskTwo.executor": "Run",
     "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
+    "Gradle.techjobs-oo-java-graded-17 [:org.launchcode.techjobs.oo.Main.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -71,7 +65,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.TestTaskTwo">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
       <module name="techjobs-oo-java17-graded.main" />
@@ -135,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.TestTaskTwo" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       </list>
     </recent_temporary>
@@ -157,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685977091317</updated>
-      <workItem from="1728607795487" duration="3656000" />
+      <workItem from="1728607795487" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="Initial starting point and working on Job Class">
       <option name="closed" value="true" />
@@ -183,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728610821396</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CoreCompetency does not have a getId method">
+      <option name="closed" value="true" />
+      <created>1728611804846</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728611804846</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +195,7 @@
     <MESSAGE value="Initial starting point and working on Job Class" />
     <MESSAGE value="Getters and Setters hashCode from Employer changed to match Job class" />
     <MESSAGE value="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length" />
-    <option name="LAST_COMMIT_MESSAGE" value="error: constructor Location in class Location cannot be applied to given types;&#10;        Job job1 = new Job(&quot;Product tester&quot;, new Employer(&quot;ACME&quot;), new Location(&quot;Desert&quot;), new PositionType(&quot;Quality control&quot;), new CoreCompetency(&quot;Persistence&quot;));&#10;                                                                   ^&#10;  required: no arguments&#10;  found:    String&#10;  reason: actual and formal argument lists differ in length" />
+    <MESSAGE value="CoreCompetency does not have a getId method" />
+    <option name="LAST_COMMIT_MESSAGE" value="CoreCompetency does not have a getId method" />
   </component>
 </project>
