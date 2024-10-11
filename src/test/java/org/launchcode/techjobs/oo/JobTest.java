@@ -32,6 +32,14 @@ public class JobTest {
     public void testJobsForEquality() {
         Job job_t4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job job_t5 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals("IDs don't match",false,"job_t4.equals(job_t5));
     }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() {
+        Job job_t6 = new Job();
+        assertEquals("Line separators detected",job_t6.toString(),System.lineSeparator() + "ID: " + System.lineSeparator() + job_t6.toString() + System.lineSeparator());
+    }
+
 
 }

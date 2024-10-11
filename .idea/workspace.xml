@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 3 complete - fixed wrong setCoreCompetency and setPositionType">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 4 partial completetion, testJobConstructorSetsAllFields and testSettingJobId complete.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +65,7 @@
     "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
     "Gradle.JobTest.executor": "Run",
     "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
+    "Gradle.JobTest.testSettingJobId.executor": "Run",
     "Gradle.TestTaskFive.executor": "Run",
     "Gradle.TestTaskFour.executor": "Run",
     "Gradle.TestTaskThree.executor": "Run",
@@ -135,6 +136,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -183,30 +208,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskThree&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="JobTest" type="JUnit" factoryName="JUnit">
       <module name="techjobs-oo-java17-graded.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -222,18 +223,18 @@
     <list>
       <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
+      <item itemvalue="Gradle.JobTest.testSettingJobId" />
       <item itemvalue="Gradle.TestTaskFive" />
       <item itemvalue="Gradle.TestTaskFour" />
-      <item itemvalue="Gradle.TestTaskThree" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
+        <item itemvalue="Gradle.JobTest.testSettingJobId" />
         <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.TestTaskFour" />
-        <item itemvalue="Gradle.TestTaskThree" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +254,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685977091317</updated>
-      <workItem from="1728607795487" duration="9742000" />
+      <workItem from="1728607795487" duration="11414000" />
     </task>
     <task id="LOCAL-00001" summary="Initial starting point and working on Job Class">
       <option name="closed" value="true" />
@@ -303,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728613250246</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Task 4 partial completetion, testJobConstructorSetsAllFields and testSettingJobId complete.">
+      <option name="closed" value="true" />
+      <created>1728618114282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728618114283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +325,7 @@
     <MESSAGE value="CoreCompetency does not have a getId method" />
     <MESSAGE value="Task 2 complete" />
     <MESSAGE value="Task 3 complete - fixed wrong setCoreCompetency and setPositionType" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 3 complete - fixed wrong setCoreCompetency and setPositionType" />
+    <MESSAGE value="Task 4 partial completetion, testJobConstructorSetsAllFields and testSettingJobId complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 4 partial completetion, testJobConstructorSetsAllFields and testSettingJobId complete." />
   </component>
 </project>

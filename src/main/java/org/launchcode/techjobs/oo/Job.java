@@ -83,4 +83,17 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency){
         this.coreCompetency = coreCompetency;
     }
+
+    public String toString(){
+        String LB = System.lineSeparator();
+        if () {
+
+        }
+
+        return (
+        System.lineSeparator();
+        System.out.println("ID: " + getId() + ", Name: " + getName());
+        System.lineSeparator();
+        )
+    }
 }
