@@ -13,6 +13,7 @@ public class Job {
     private PositionType positionType;
     private CoreCompetency coreCompetency;
 
+
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
@@ -85,17 +86,18 @@ public class Job {
     }
 
     public String toString(){
+
         // Jay suggested throwing in ternary operations a while back in GA6 so going to implement that
-        String result = "\n";
-        result = "ID: " + id + "\n";
+        String lineSep = System.lineSeparator();
+        String resulted = lineSep;
+        resulted += "ID: " + id + lineSep;
+        resulted += "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + lineSep;
+        resulted += "Employer: " + ((employer == null || employer.getValue().equals("")) ? "Data not available" : employer.getValue()) + lineSep;
+        resulted += "Location: " + ((location == null || location.getValue().equals("")) ? "Data not available" : location.getValue()) + lineSep;
+        resulted += "Position Type: " + ((positionType == null || positionType.getValue().equals("")) ? "Data not available" : positionType.getValue()) + lineSep;
+        resulted += "Core Competency: " + ((coreCompetency == null || coreCompetency.getValue().equals("")) ? "Data not available" : coreCompetency.getValue()) + lineSep;
 
-        result += "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + "\n";
-        result += "Employer:  " + ((employer == null || name.equals("")) ? "Data not available" : employer) + "\n";
-        result += "Location: " + ((location == null || location.equals("")) ? "Data not available" : location) + "\n";
-        result += "Position Type: " + ((positionType == null || positionType.equals("")) ? "Data not available" : positionType) + "\n";
-        result += "Core Competency: " + ((coreCompetency == null || coreCompetency.equals("")) ? "Data not available" : coreCompetency) + "\n";
-
-        return result.toString();
+        return resulted;
     }
 
 

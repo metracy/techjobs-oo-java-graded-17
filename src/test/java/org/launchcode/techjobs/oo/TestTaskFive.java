@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 /**
- * Created by LaunchCode     If line separator error
+ * Created by LaunchCode
  */
 public class TestTaskFive extends AbstractTest {
 
@@ -37,7 +37,7 @@ public class TestTaskFive extends AbstractTest {
     @Test
     public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
-        
+
         assertTrue(job.toString().startsWith(lineSeparator()));
         assertTrue(job.toString().endsWith(lineSeparator()));
     }
