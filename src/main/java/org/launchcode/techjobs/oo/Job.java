@@ -32,7 +32,7 @@ public class Job {
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
     @Override
-    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
+    public boolean equals(Object o) {  // Two objects are = if they have the same id.
         if (this == o) return true;
         if (!(o instanceof Job job)) return false;
         return getId() == job.getId();
@@ -65,7 +65,7 @@ public class Job {
     // Setters
 
     public void setName(String value) {
-        this.name = name;
+        this.name = value; // This broke things needs set to value not name
     }
 
     public void setEmployer(Employer employer) {
@@ -85,15 +85,18 @@ public class Job {
     }
 
     public String toString(){
-        String LB = System.lineSeparator();
-        if () {
+        // Jay suggested throwing in ternary operations a while back in GA6 so going to implement that
+        String result = "\n";
+        result = "ID: " + id + "\n";
 
-        }
+        result += result + "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + "\n";
+        result += result + "Employer:  " + ((employer == null || name.equals("")) ? "Data not available" : employer) + "\n";
+        result += result + "Location: " + ((location == null || location.equals("")) ? "Data not available" : location) + "\n";
+        result += result + "Position Type: " + ((positionType == null || positionType.equals("")) ? "Data not available" : positionType) + "\n";
+        result += result + "Core Competency: " + ((coreCompetency == null || coreCompetency.equals("")) ? "Data not available" : coreCompetency) + "\n";
 
-        return (
-
-        "ID: " + getId() + System.lineSeparator() + ", Name: " + System.lineSeparator() + getName() + System.lineSeparator() + + System.lineSeparator() + System.lineSeparator() + System.lineSeparator() + System.lineSeparator());
-        System.lineSeparator();
-        )
+        return result.toString();
     }
+
+
 }

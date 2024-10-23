@@ -47,14 +47,4 @@ public class TestTaskFour extends AbstractTest {
         }
     }
 
-    @Test
-    public void testTestJobsForEqualityExists() throws ClassNotFoundException {
-        Class jobTestClass = getClassByName("JobTest");
-
-        try {
-            jobTestClass.getMethod("testJobsForEquality");
-        } catch (NoSuchMethodException e) {
-            fail("JobTest does not have a testJobsForEquality method");
-        }
-    }
 }

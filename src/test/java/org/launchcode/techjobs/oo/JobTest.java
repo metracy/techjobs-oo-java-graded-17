@@ -28,6 +28,7 @@ public class JobTest {
         assertEquals("Position is correct","Quality control",job_t3.getPositionType().getValue());
         assertEquals("CoreCompetency is correct","Persistence",job_t3.getCoreCompetency().getValue());
     }
+
     @Test
     public void testJobsForEquality() {
         Job job_t4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
