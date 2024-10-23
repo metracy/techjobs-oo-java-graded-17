@@ -39,19 +39,22 @@ public class JobTest {
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
         Job job_t6 = new Job();
-        assertEquals("Line sep detected", job_t6.toString(),System.lineSeparator() + "ID: " + System.lineSeparator() + job_t6.toString() + System.lineSeparator());
+        String job_t6_String = job_t6.toString();
+
+        assertTrue("Job description should start with a newline", job_t6_String.startsWith(System.lineSeparator()));
+        assertTrue("Job description should end with a newline", job_t6_String.endsWith(System.lineSeparator()));
     }
 
     @Test
     public void testToStringHandlesEmptyField() {
         Job job_t8 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
         String lineSep = System.lineSeparator();
-        String resulteder = lineSep + "ID: " + job_t8.getId() + "\n" +
-                "Name: Data not available" + "\n" +
-                "Employer: Data not available" + "\n" +
-                "Location: Data not available" + "\n" +
-                "Position Type: Data not available" + "\n" +
-                "Core Competency: Data not available" + "\n";
+        String resulteder = lineSep + "ID: " + job_t8.getId() + lineSep +
+                "Name: Data not available" + lineSep +
+                "Employer: Data not available" + lineSep +
+                "Location: Data not available" + lineSep +
+                "Position Type: Data not available" + lineSep +
+                "Core Competency: Data not available" + lineSep;
 
         assertEquals(resulteder, job_t8.toString());
     }
