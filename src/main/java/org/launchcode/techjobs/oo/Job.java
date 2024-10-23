@@ -89,11 +89,11 @@ public class Job {
         String result = "\n";
         result = "ID: " + id + "\n";
 
-        result += result + "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + "\n";
-        result += result + "Employer:  " + ((employer == null || name.equals("")) ? "Data not available" : employer) + "\n";
-        result += result + "Location: " + ((location == null || location.equals("")) ? "Data not available" : location) + "\n";
-        result += result + "Position Type: " + ((positionType == null || positionType.equals("")) ? "Data not available" : positionType) + "\n";
-        result += result + "Core Competency: " + ((coreCompetency == null || coreCompetency.equals("")) ? "Data not available" : coreCompetency) + "\n";
+        result += "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + "\n";
+        result += "Employer:  " + ((employer == null || name.equals("")) ? "Data not available" : employer) + "\n";
+        result += "Location: " + ((location == null || location.equals("")) ? "Data not available" : location) + "\n";
+        result += "Position Type: " + ((positionType == null || positionType.equals("")) ? "Data not available" : positionType) + "\n";
+        result += "Core Competency: " + ((coreCompetency == null || coreCompetency.equals("")) ? "Data not available" : coreCompetency) + "\n";
 
         return result.toString();
     }
