@@ -3,11 +3,14 @@ package org.launchcode.techjobs.oo;
 import java.util.Objects;
 
 public abstract class JobField {
-    private static int nextId = 1;
+
     private int id;
+    private static int nextId = 1;
     private String value;
 
-    public JobField() {id = nextId++;}
+    public JobField() {
+        this.id = nextId;
+        nextId++;}
 
     public JobField(String value) {
         this();
@@ -21,21 +24,19 @@ public abstract class JobField {
     @Override
     public boolean equals(Object o) {  // Two objects are = if they have the same id.
         if (this == o) return true;
-        if (!(o instanceof Job job)) return false;
-        return getId() == job.getId();
+        if (!(o instanceof JobField)) return false;
+        JobField jobField = (JobField) o;
+        return getId() == jobField.getId();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(getId());
     }
 
     @Override
     public String toString() {
         return value;
     }
-
-
-
 
 }

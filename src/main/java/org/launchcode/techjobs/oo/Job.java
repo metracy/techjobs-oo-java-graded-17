@@ -87,7 +87,7 @@ public class Job {
 
     public String toString(){
 
-        // Jay suggested throwing in ternary operations a while back in GA6 so going to implement that
+        // Jay suggested throwing in ternary operations a while back in GA6 so going to implement that in java
         String lineSep = System.lineSeparator();
         String resulted = lineSep;
         resulted += "ID: " + id + lineSep;
