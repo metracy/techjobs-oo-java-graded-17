@@ -79,5 +79,4 @@ public class TestTaskFive extends AbstractTest {
         String jobString = getJobString(job);
         assertEquals(jobString, job.toString());
     }
-
 }
