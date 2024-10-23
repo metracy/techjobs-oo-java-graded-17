@@ -89,8 +89,7 @@ public class Job {
 
         // Jay suggested throwing in ternary operations a while back so going to implement that in java
         String lineSep = System.lineSeparator();
-        String resulted = lineSep;
-        resulted += "ID: " + id + lineSep;
+        String resulted = "ID: " + getId() + lineSep;
         resulted += "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + lineSep;
         resulted += "Employer: " + ((employer == null || employer.getValue().equals("")) ? "Data not available" : employer.getValue()) + lineSep;
         resulted += "Location: " + ((location == null || location.getValue().equals("")) ? "Data not available" : location.getValue()) + lineSep;

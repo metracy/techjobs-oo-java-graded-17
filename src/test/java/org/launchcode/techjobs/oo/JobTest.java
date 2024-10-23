@@ -45,29 +45,27 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField() {
         Job job_t8 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
-        String resulteder = "\n" +
-                "ID: " + job_t8.getId() + "\n" +
+        String resulteder = "ID: " + job_t8.getId() + "\n" +
                 "Name: Data not available" + "\n" +
                 "Employer: Data not available" + "\n" +
                 "Location: Data not available" + "\n" +
                 "Position Type: Data not available" + "\n" +
                 "Core Competency: Data not available" + "\n";
 
-        assertEquals(resulteder, job_t8.toString());
+        assertEquals(resulteder, job_t8);
     }
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
         Job job_t9 = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
-        String result_t9 = "\n" +
-                "ID: " + job_t9.getId() + "\n" +
+        String result_t9 = "ID: " + job_t9.getId() + "\n" +
                 "Name: Web Developer" + "\n" +
                 "Employer: LaunchCode" +  "\n" +
                 "Location: St. Louis" +  "\n" +
                 "Position Type: Front-end developer" +  "\n" +
                 "Core Competency: JavaScript" + "\n";
 
-        assertEquals(result_t9, job_t9.toString());
+        assertEquals(result_t9, job_t9);
     }
 
 
