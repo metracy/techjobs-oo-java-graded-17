@@ -89,12 +89,13 @@ public class Job {
 
         // Jay suggested throwing in ternary operations a while back so going to implement that in java
         String lineSep = System.lineSeparator();
-        String resulted = "ID: " + getId() + lineSep;
-        resulted += "Name: " + ((name == null || name.equals("")) ? "Data not available" : name) + lineSep;
-        resulted += "Employer: " + ((employer == null || employer.getValue().equals("")) ? "Data not available" : employer.getValue()) + lineSep;
-        resulted += "Location: " + ((location == null || location.getValue().equals("")) ? "Data not available" : location.getValue()) + lineSep;
-        resulted += "Position Type: " + ((positionType == null || positionType.getValue().equals("")) ? "Data not available" : positionType.getValue()) + lineSep;
-        resulted += "Core Competency: " + ((coreCompetency == null || coreCompetency.getValue().equals("")) ? "Data not available" : coreCompetency.getValue()) + lineSep;
+        String resulted = lineSep;
+        resulted += "ID: " + id + lineSep;
+        resulted += "Name: " + ((name == null || name.isEmpty()) ? "Data not available" : name) + lineSep;
+        resulted += "Employer: " + ((employer == null || employer.getValue().isEmpty()) ? "Data not available" : employer.getValue()) + lineSep;
+        resulted += "Location: " + ((location == null || location.getValue().isEmpty()) ? "Data not available" : location.getValue()) + lineSep;
+        resulted += "Position Type: " + ((positionType == null || positionType.getValue().isEmpty()) ? "Data not available" : positionType.getValue()) + lineSep;
+        resulted += "Core Competency: " + ((coreCompetency == null || coreCompetency.getValue().isEmpty()) ? "Data not available" : coreCompetency.getValue()) + lineSep;
 
         return resulted;
     }
